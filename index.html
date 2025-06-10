@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As 10 Melhores Maneiras de Ganhar Dinheiro na Internet - E-book</title>
+    <meta name="description" content="Descubra as 10 estratégias comprovadas para gerar renda online. E-book completo com métodos práticos e testados.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .cta-header {
+            background: #ffd700;
+            color: #1e3c72;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .cta-header:hover {
+            background: #ffed4e;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9)), url('hero-background.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #1e3c72;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+        }
+
+        .price {
+            margin: 20px 0;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        .new-price {
+            color: #ffd700;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #1e3c72;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .ebook-image {
+            text-align: center;
+        }
+
+        .ebook-cover {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .ebook-cover:hover {
+            transform: scale(1.05);
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .benefits h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #1e3c72;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            border-color: #ffd700;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #1e3c72;
+        }
+
+        .benefit-card p {
+            color: #666;
+        }
+
+        /* What You'll Learn Section */
+        .content-preview {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        .content-preview h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .content-item {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+        }
+
+        .content-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #1e3c72;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #1e3c72;
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .urgency {
+            background: rgba(255, 215, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 2px solid #ffd700;
+        }
+
+        .urgency h3 {
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #ffd700;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .benefits-grid,
+            .content-list,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">💰 Dinheiro Online</div>
+                <a href="#comprar" class="cta-header">Comprar Agora</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Descubra as <span class="highlight">10 Melhores Maneiras</span><br>de Ganhar Dinheiro na Internet</h1>
+                <p class="subtitle">Métodos comprovados e testados para você começar a gerar renda online ainda hoje, mesmo sem experiência!</p>
+                
+                <div class="price">
+                    <span class="old-price">De R$ 97,00</span>
+                    <span class="new-price">Por apenas R$ 27,00</span>
+                </div>
+                
+                <a href="#comprar" class="cta-button">🚀 QUERO MEU E-BOOK AGORA!</a>
+                
+                <div class="scroll-indicator">
+                    <p>Role para baixo ↓</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2>Pare de Perder Tempo com Métodos que Não Funcionam!</h2>
+                    <p><strong>Você já tentou ganhar dinheiro online e se frustrou?</strong> Já perdeu tempo com promessas vazias e métodos complicados que não levam a lugar nenhum?</p>
+                    <p>Este e-book foi criado especialmente para pessoas como você, que querem <strong>resultados reais</strong> sem enrolação. São 10 estratégias testadas e aprovadas que realmente funcionam.</p>
+                    <p>✅ <strong>Métodos práticos e diretos</strong><br>
+                    ✅ <strong>Sem necessidade de investimento inicial</strong><br>
+                    ✅ <strong>Funciona mesmo para iniciantes</strong><br>
+                    ✅ <strong>Resultados em poucos dias</strong></p>
+                </div>
+                <div class="ebook-image fade-in">
+                    <img src="ebook-cover.png" alt="Capa do E-book: As 10 Melhores Maneiras de Ganhar Dinheiro na Internet" class="ebook-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="fade-in">Por Que Este E-book Vai Mudar Sua Vida?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">💡</div>
+                    <h3>Métodos Simples</h3>
+                    <p>Estratégias fáceis de entender e aplicar, mesmo se você nunca ganhou dinheiro online antes.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Resultados Rápidos</h3>
+                    <p>Alguns métodos podem gerar seus primeiros ganhos em apenas 24-48 horas após a aplicação.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Passo a Passo</h3>
+                    <p>Cada método é explicado detalhadamente, com instruções claras do que fazer exatamente.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Sem Investimento</h3>
+                    <p>A maioria dos métodos não requer nenhum investimento inicial, apenas seu tempo e dedicação.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">📱</div>
+                    <h3>Trabalhe de Casa</h3>
+                    <p>Todos os métodos podem ser executados no conforto da sua casa, no seu próprio horário.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🔄</div>
+                    <h3>Renda Recorrente</h3>
+                    <p>Aprenda a criar fontes de renda que continuam gerando dinheiro mesmo enquanto você dorme.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Preview -->
+    <section class="content-preview">
+        <div class="container">
+            <h2 class="fade-in">O Que Você Vai Aprender:</h2>
+            <div class="content-list">
+                <div class="content-item fade-in">
+                    <h4>Método #1: Marketing de Afiliados</h4>
+                    <p>Como promover produtos de outras pessoas e ganhar comissões generosas sem ter seu próprio produto.</p>
+                </div>
+                <div class="content-item fade-in">
+                    <h4>Método #2: Freelancing Online</h4>
+                    <p>Descubra como monetizar suas habilidades oferecendo serviços em plataformas digitais.</p>
+                </div>
+                <div class="content-item fade-in">
+                    <h4>Método #3: Criação de Conteúdo</h4>
+                    <p>Como ganhar dinheiro criando conteúdo no YouTube, Instagram, TikTok e outras plataformas.</p>
+                </div>
+                <div class="content-item fade-in">
+                    <h4>Método #4: Venda de Produtos Digitais</h4>
+                    <p>Aprenda a criar e vender seus próprios produtos digitais com margem de lucro de 100%.</p>
+                </div>
+                <div class="content-item fade-in">
+                    <h4>Método #5: Dropshipping</h4>
+                    <p>Como montar uma loja online sem estoque e começar a vender produtos físicos.</p>
+                </div>
+                <div class="content-item fade-in">
+                    <h4>E mais 5 métodos poderosos!</h4>
+                    <p>Incluindo trading, consultoria online, cursos digitais, aplicativos de renda extra e muito mais!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="fade-in">O Que Nossos Leitores Estão Dizendo:</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial fade-in">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Em apenas 15 dias aplicando o método #3, já consegui meus primeiros R$ 500 online. Incrível como é simples quando você sabe o que fazer!"</p>
+                    <p class="testimonial-author">- Maria Silva, São Paulo</p>
+                </div>
+                <div class="testimonial fade-in">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Estava desempregado e desesperado. Este e-book me salvou! Hoje ganho mais online do que no meu antigo emprego."</p>
+                    <p class="testimonial-author">- João Santos, Rio de Janeiro</p>
+                </div>
+                <div class="testimonial fade-in">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Finalmente um material que vai direto ao ponto! Sem enrolação, só métodos que realmente funcionam. Recomendo 100%!"</p>
+                    <p class="testimonial-author">- Ana Costa, Belo Horizonte</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="comprar">
+        <div class="container">
+            <h2 class="fade-in">Não Perca Esta Oportunidade!</h2>
+            <p class="fade-in">Milhares de pessoas já estão aplicando estes métodos e mudando suas vidas financeiras.</p>
+            
+            <div class="urgency fade-in">
+                <h3>🔥 OFERTA ESPECIAL - APENAS HOJE!</h3>
+                <p>De R$ 97,00 por apenas <strong>R$ 27,00</strong></p>
+                <p>Esta promoção pode acabar a qualquer momento!</p>
+            </div>
+            
+            <a href="#" class="cta-button fade-in" onclick="comprarEbook()">
+                💳 COMPRAR AGORA - R$ 27,00
+            </a>
+            
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                ✅ Acesso imediato após o pagamento<br>
+                ✅ Garantia de 7 dias - 100% do seu dinheiro de volta<br>
+                ✅ Suporte completo via WhatsApp
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: contato@dinheironline.com</p>
+                    <p>WhatsApp: (11) 99999-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Garantia</h4>
+                    <p>7 dias de garantia incondicional</p>
+                    <p>100% do seu dinheiro de volta</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <p>Atendimento de segunda a sexta</p>
+                    <p>Das 9h às 18h</p>
+                </div>
+            </div>
+            <p>&copy; 2025 Dinheiro Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Comprar e-book function
+        function comprarEbook() {
+            // Aqui você pode integrar com sua plataforma de pagamento
+            // Por exemplo: Mercado Pago, PagSeguro, Stripe, etc.
+            
+            alert('Redirecionando para o pagamento...\n\nEm breve você receberá o link de download do e-book no seu email!');
+            
+            // Exemplo de redirecionamento para plataforma de pagamento
+            // window.location.href = 'https://link-do-seu-checkout.com';
+        }
+
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate price on load
+            const newPrice = document.querySelector('.new-price');
+            if (newPrice) {
+                setTimeout(() => {
+                    newPrice.style.animation = 'pulse 1s ease-in-out infinite alternate';
+                }, 2000);
+            }
+        });
+
+        // Add pulse animation for price
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes pulse {
+                from { transform: scale(1); }
+                to { transform: scale(1.05); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Track scroll for header background
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(42, 82, 152, 0.95) 100%)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)';
+                header.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
